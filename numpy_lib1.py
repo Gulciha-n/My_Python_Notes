@@ -30,4 +30,3 @@ print(array4)
 print(array5)
 print(array6)
 
-
