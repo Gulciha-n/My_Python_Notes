@@ -1,60 +1,152 @@
-#exp1
+print("""strings in 
+python
 
-def main():
-    str1 = 'one two three four'      
-    str2 = '10:20:30:40:50'
-    str3 = 'a/b/c/d/e/f'
+!!""")
 
-    display_tokens(str1, ' ')
-    print()
-    display_tokens(str2, ':')
-    print()
-    display_tokens(str3, '/')
-def display_tokens(data, delimiter):
-    tokens = data.split(delimiter)
-    for item in tokens:
-        print(f'Token: {item}')
-if __name__ == '__main__':
-    main()
+print("strings\npython")
+print("strings\tpython")
+
+a = "strings"
+b = "python"
+print(a + " " + b)
+print(a[1])
+print(a[1:4])
+print(a[::2])
+print(a[::-1])
 
 
 
+num1= input("number 1 : ")
+num2= input("number 2 : ")
 
+sum = int(num1)+ int(num2)
+print(sum)
+print(type(num1))
 
-#exp2
-
-class BankAccount:                   
-    def __init__(self, balance):
-        self._balance = balance
-
-    def deposit(self, amount):
-        self._balance += amount
-
-    def withdraw(self, amount):
-        if self._balance >= amount:
-            self._balance -= amount
-        else:
-            print('Error: Insufficient funds')
-
-    def get_balance(self):
-        return self._balance
-BankAccount()
+isonline = True
+print(int(isonline)) 
 
 
 
+pi= 3.14
+r = float(input("enter radius : "))
+a = circle_area = pi*r**2
+b = circle_perimeter = 2*pi*r
+#print ("area :{} perimeter : {}".format(a,b))
+print("area :" + str(a) + "perimeter : " + str(b))
+
+
+
+name = input("enter your name : ")
+surname = input("enter your surname : ")
+age = input("enter your age : ")
+
+print("name : " + name + "\nsurname : " + surname + "\nage : " + age)
+
+
+
+result = 200 / 700
+print("result : {r:.3}".format(r=result))
+print("result : {r:10.3}".format(r=result))
+
+
+
+message = " hello there. my name is gulcihan"
+print(message)
+print(message.upper())
+print(message.lower())
+print(message.capitalize())
+s = message.split()
+print(message.split())
+print(s[5])
+
+message = " ".join(message)
+print(message)
+
+index = message.find('gulcihan')
+print(index)
+
+isfound = message.startswith(' ')
+isfoundd = message.endswith('n')
+print(isfound)
+print(isfoundd)
+
+message = message.replace("gulcihan", "cansu")
+message = message.replace(" ", "_")
+print(message)
+
+message = message.center(50,"*")
+print(message)
+
+
+
+import string
+from weakref import ProxyType
+
+
+string1 = " Hello World I am Gulcihan "
+n=string1.strip()
+print(n)
+c=string1.lstrip()  #lstrip
+d=string1.rstrip()  #rstrip
+print(c)
+print(d)
+
+#rslt = string1.index('World')
+rslt = string1.rindex('Gulci')
+
+#print(rslt)
+print(rslt)
+print(string1.isalpha())
+print(string1.isdigit())
+print(string1.center(50,"*"))
+
+result = "contents".center(30)
+result1 = "contents".ljust(20,"*")
+result2 = "contents".rjust(20,"-")
+print(result)
+print(result1)
+print(result2)
+
+result3 = string1.replace(" ", "_")
+result4 = string1.replace(" ", "_",2)
+result5 = string1.replace(" ", "")
+print(result3)
+print(result4)
+print(result5)
+
+result6 = string1.replace("World" , "There")
+print(result6)
+
+result7 = string1.split(" ")
+print(result7)
+print(result7[5])
 
 
 
 
 
-'''his_age = 20
-his_height = 1.76
-his_hair_color = "brunette"
-his_hometown = "Iran"
-where_he_lives = "Turkey"
 
-print("I am", his_age,"years old,",his_height,"tall",his_hair_color,"guy from",his_hometown,"but I currently live in",where_he_lives)
 
-print("What about you? Tell me about yourself.")'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
